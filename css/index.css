@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+
+    line-height: 1.6;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.header{
+    background-color: rgb(146, 8, 8);
+    height: 170px;
+}
+
+.logo{
+    width: 250px;
+    height: 170px;
+}
+
+.main{
+    height: 100%;
+    background-color: rgb(146, 8, 8);
+    padding-bottom: 15px;
+}
+
+.first-view{
+    height: 500px;
+    background-image: url(../image/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text h1{
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.first-view-text p{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.first-view-text{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    color: black;
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #b9b9b9;
+}
+
+.notice-section {
+
+    border: 2px solid #0078D7;
+
+    padding: 20px;
+
+    margin: 20px;
+
+    background-color: #f9f9f9;
+
+    border-radius: 5px;
+
+}
+
+.notice-section h2 {
+
+    color: #0078D7;
+
+}
+
+.notice-item {
+
+    margin-bottom: 15px;
+
+}
+
+.notice-item h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 18px;
+
+    color: #000000;
+
+}
+
+.notice-item p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #000000;
+
+}
+
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 20px;
+    padding: 15px 25px;
+    font-family: "Noto Serif JP", serif;
+    line-height: 25px;
+}
+
+.panel h1{
+    font-weight: bold;
+}
+
+.panel h2{
+    font-weight: bold;
+}
+
+.footer{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .logo{
+    margin-bottom: 10px;
+}
+
+.form{
+    font-size: 15px;
+}
+
+
+.item img{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 800px){
+    .header{
+        height: 100px;
+    }
+
+    .header .logo{
+        width: 150px;
+        height: 100px;
+    }
+
+    .first-view{
+        height: 400px;
+    }
+
+    .first-view-text{
+      padding-top: 50px;
+      padding-right: 20px;
+      line-height: 10px;
+    }
+
+    .first-view-text h1{
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .first-view-text p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .notice-section{
+        padding: 20px;
+    }
+
+    .footer p{
+        font-size: 20px;
+    }
+
+    .footer .form{
+        font-size: 15px;
+    }
+
+    .item img{
+        width: 50px;
+        height: 50px;
+    }
+
+
+}
